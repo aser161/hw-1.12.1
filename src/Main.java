@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) {
 
-        Author APushkin = new Author("Александр Пушкин");
-        Author Hugo = new Author("Виктор Гюго");
+        Author APushkin = new Author("Александр Пушкин ");
+        Author Hugo = new Author("Виктор Гюго ");
 
         Book Dubrovskiy = new Book(APushkin, 1841);
         Book Otvergennie = new Book(Hugo, 1862);
