@@ -23,4 +23,9 @@ public class Book {
     public void setYearOfPublishing(int yearOfPublishing) {
         this.yearOfPublishing = yearOfPublishing;
     }
+
+    @Override
+    public String toString() {
+        return author.toString() + getTitle() + " " + getYearOfPublishing();
+    }
 }
