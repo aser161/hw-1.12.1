@@ -21,5 +21,8 @@ public class Main {
         System.out.println(Otvergennie.getTitle() + Otvergennie.getYearOfPublishing());
 
         System.out.println(Dubrovskiy.toString());
+        System.out.println(Book.hashCode(Dubrovskiy));
+        System.out.println(Book.equals(Dubrovskiy, Otvergennie));
+
     }
 }
