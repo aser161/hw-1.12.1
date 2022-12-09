@@ -1,7 +1,7 @@
 import java.util.Objects;
 
 public class Author {
-    private String name;
+    private final String name;
 
     public Author (String name){
         this.name = name;
@@ -17,11 +17,12 @@ public class Author {
     }
     @Override
     public boolean equals(Object other) {
+        if (this == other) return true;
         if (this.getClass() != other.getClass() && other != null) {
             return false;
         }
         Author author = (Author) other;
-        return name.equals(name);
+        return Objects.equals(name, author.name);
     }
 
     @Override
